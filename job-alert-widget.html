@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Alert Widget</title>
+</head>
+<body>
+    <!-- The job alert widget -->
+    <div id="sr-plugins"
+        data-configuration-id="dd5b44c8-9444-4c20-a369-8d836be67ea8"
+        data-bg="238740"
+        data-radius="0"
+        data-lang=""
+        data-test-server-domain="https://subscriptions.smartrecruiters.com"
+        data-company-identifier="OECD">
+    </div>
+
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://subscriptions.smartrecruiters.com/widget/v1/sr-job-alerts.js?dcr_ci=OECD";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'sr-jsplugins'));
+    </script>
+
+    <div id="sr-alert-button" data-type="WITH_ICON"></div>
+</body>
+</html>
